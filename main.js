@@ -14,7 +14,7 @@ let continueDownload = true;
 
 for (let loop = 0; loop < MAX_LOOP; loop++) {
     if (continueDownload) {
-        if (loop < MAX_LOOP - 1) {
+        if (loop < MAX_LOOP/2) {
             activeBlog = <blognamehere>;
         }
         else {
