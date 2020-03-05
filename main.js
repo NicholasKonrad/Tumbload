@@ -19,7 +19,7 @@ for (let loop = 0; loop < MAX_LOOP; loop++) {
         }
         else {
             if (activeBlog == <blognamehere>) globalOffset = 0;
-            activeBlog = <blognamehere>;
+            activeBlog = <otherblognamehere>;
         }        
     
         client.blogPosts(activeBlog, { offset: globalOffset }, (err, data) => {    
