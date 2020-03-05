@@ -2,7 +2,7 @@ const tumblr = require('tumblr.js');
 const fs = require('fs');
 const https = require('https');
 const client = tumblr.createClient({
-  
+  //auth token etc go here
 });
 
 
@@ -63,7 +63,8 @@ function saveFileToDisk(url, blog, imagename, suffix) {
             let stream = response.pipe(writeStream); 
             stream.on('finish', () => { 
                 setTimeout(() => {
-                    continueDownload = true
+                    //Tried to provide more time for the download stream before setting up new streams (i dont think this works)
+                    continueDownload = true;
                 }, 10000);
             });
         });
